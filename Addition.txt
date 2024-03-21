@@ -1,0 +1,24 @@
+pragma solidity 0.8.24;
+
+contract Math 
+{
+  function math(uint a, uint b) public pure  returns(uint,uint,uint,uint,uint,uint,uint)
+  {
+    //add
+    uint add = a + b;
+
+    uint sub = a - b;
+
+    uint mult = a * b;
+
+    uint div = a / b;
+
+    uint mod = a % b;
+
+    uint inc = ++a;
+
+    uint dec= --a;
+
+    return (add,sub,mult,div,mod,inc,dec);
+  } 
+}

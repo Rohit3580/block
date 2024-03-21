@@ -1,0 +1,15 @@
+pragma solidity 0.8.24;
+
+contract Store 
+{
+    uint value;
+    function store() external  view returns(uint)
+    {
+        return value;
+    }
+    function retrive(uint _value) external 
+    {
+        value = _value;
+    } 
+    
+}

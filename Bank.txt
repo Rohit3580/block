@@ -1,0 +1,22 @@
+pragma solidity 0.8.24;
+
+contract Bank 
+{
+    uint private bal;
+
+    function display() view public returns(uint)
+    {
+        return bal;
+    }
+
+    function deposit(uint amnt) public 
+    {
+        bal += amnt;
+    }
+
+    function withdraw(uint amnt) public 
+    {
+        bal -= amnt;
+    }
+    
+}
